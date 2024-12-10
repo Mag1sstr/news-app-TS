@@ -2,8 +2,8 @@ import styles from "./styles.module.css";
 
 interface IProps {
   categories: string[];
-  selectedCategory: string;
-  setSelectedCategory: (category: string) => void;
+  selectedCategory: string | null;
+  setSelectedCategory: (category: string | null) => void;
 }
 export default function Categories({
   categories,
@@ -12,6 +12,13 @@ export default function Categories({
 }: IProps) {
   return (
     <div className={styles.categories}>
+      <button
+        onClick={() => setSelectedCategory(null)}
+        className={!selectedCategory ? styles.active : styles.item}
+      >
+        All
+      </button>
+
       {categories.map((category) => {
         return (
           <button
