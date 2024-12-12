@@ -1,19 +1,13 @@
+import { IPaginationProps } from "../../interfaces/interfaces";
 import styles from "./styles.module.css";
 
-interface IProps {
-  totalPage: number;
-  currentPage: number;
-  handleNextPage: () => void;
-  handlePreviousPage: () => void;
-  handlePageClick: (pageNumber: number) => void;
-}
 export default function Pagination({
   totalPage,
   handleNextPage,
   handlePreviousPage,
   handlePageClick,
   currentPage,
-}: IProps) {
+}: IPaginationProps) {
   return (
     <div className={styles.pagination}>
       <button
