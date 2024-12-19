@@ -4,7 +4,8 @@
   padding: 12px 24px;
   background-color: white;
   border-bottom: 1px solid #f2f4f5;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   gap: 12px;
 }
 .title {
@@ -12,4 +13,27 @@
 }
 .date {
   font-size: 16px;
+}
+
+.button {
+  display: flex;
+  width: 65px;
+  height: 31px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  padding: 2px;
+}
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: gray;
+  transition: 0.3s;
+}
+.button.active .circle {
+  margin-left: calc(100% - 25px);
+}
+.dark {
+  background-color: #23272f;
+  color: #fff;
 }

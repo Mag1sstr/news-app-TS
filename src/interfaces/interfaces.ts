@@ -18,3 +18,11 @@ export interface IFilters {
   category: null | string;
   keywords: string;
 }
+
+export interface IPaginationProps {
+  totalPage: number;
+  currentPage: number;
+  handleNextPage: () => void;
+  handlePreviousPage: () => void;
+  handlePageClick: (page: number) => void;
+}

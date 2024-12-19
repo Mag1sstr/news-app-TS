@@ -22,3 +22,7 @@
   border: none;
   background-color: #fff;
 }
+.dark {
+  background: #23272f;
+  color: #fff;
+}
