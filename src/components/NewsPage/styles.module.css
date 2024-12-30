@@ -1,0 +1,7 @@
+.return {
+  font-size: 25px;
+  color: #6b4eff;
+  text-decoration: underline;
+  cursor: pointer;
+  user-select: none;
+}
